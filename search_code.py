@@ -3,7 +3,7 @@ import re
 import time
 
 
-github_token = "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"
+github_token = "qqqqqqqq"
 
 
 def search_github_for_function_signature(function_name, function_signature):
@@ -29,7 +29,7 @@ def extract_function_signatures_from_file(file_path):
     pattern = re.compile(r'def (\w+)\((.*?)\):', re.DOTALL)
     return pattern.findall(content)
 
-local_file_path = '/Users/galimusaev/Desktop/Hacks/keras2circom/keras2circom/circom.py'
+local_file_path = '/path'
 function_signatures = extract_function_signatures_from_file(local_file_path)
 
 for function_name, function_signature in function_signatures:
